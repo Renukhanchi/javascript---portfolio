@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formValidation.css">
+    <title>Document</title>
+</head>
+<body>
+       <!-- common nav bar -->
+    <header class="header"> 
+        <nav class="nav_bar">
+            <a href="../../../index.html" class="nav_anchorTag">home</a>
+            <a href="../../projects.html" class="nav_anchorTag">projects</a>
+            <a href="../quiz app/quiz.html" class="nav_anchorTag">next project</a>
+         </nav> 
+    </header>
+
+    <div class="nav_bar_main">
+        <h1>Login Page</h1>
+        <button class="answers">answers</button>
+    </div>
+    <div class="allAnswers">
+        user id = renu <br>
+        user password = 123 <br>
+        user email = any email with proper syntax<br>
+    </div>
+      <form class="form" onSubmit="return submitall()">
+        <label >user id</label>
+        <input type='text' name='username' id='username' class="inputs"/>       
+        <div id="names" class="Error-color"></div>
+        <br>
+        <label >user password</label>  
+        <input type='password' name='password' id='password' class="inputs"/>  
+        <div id="pass" class="Error-color"></div>
+        <br>
+        <label >user email</label>
+        <input type="text" id="email"  class="inputs"/>          
+        <div id="mailError" class="Error-color"></div>
+        <br>
+        <input type="submit" value="login" class="submitButton">
+      </form>
+
+      
+<script src="formValidation.js"></script>
+   
+
+
+  
+
+</body>
+</html>
